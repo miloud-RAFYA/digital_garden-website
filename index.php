@@ -1,11 +1,10 @@
 <?php
-// Inclure la base de données et démarrer la session
+
 include('config/database.php');
-if (session_status() === PHP_SESSION_NONE) {
     session_start();
-}
+
 $_SESSION['user_id']= null;
-// Inclure le header
+
 require_once 'includes/header.php';
 ?>
 <!DOCTYPE html>
@@ -14,8 +13,6 @@ require_once 'includes/header.php';
     <meta charset="UTF-8">
     <title>Digital Garden</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Lien vers ton CSS -->
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
