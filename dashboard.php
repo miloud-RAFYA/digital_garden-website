@@ -1,8 +1,4 @@
-<?php
-session_start();
-// require_once 'includes/auth.php';
-require_once 'includes/header.php';
-?>
+
 <!DOCTYPE html>
 <html lang="fr">
 

@@ -1,26 +1,4 @@
-<?php
-include('config/database.php');
-session_start();
-if ($_SERVER['REQUEST_METHOD'] === "POST") {
-if (isset($_POST["register"])) {
-    $fname = $_POST['fname'];
-    $name = $_POST['username'];
-    $password = $_POST['password'];
-    $Confirme = $_POST['Confirme'];
-    $resultat = $cnx->query("select * from users where username='$name'");
-    if (!$resultat) {
-        if ($Confirme == $password) {
-            $password = password_hash($password, PASSWORD_DEFAULT);
-            mysqli_query($cnx,"INSERT INTO users(username,password,fName) VALUES ('$name','$password','$fname')");
-            header("location: login.php");
-            exit();
-        }
-    }else{
-         
-    }
-}
-}
-?>
+
 <!DOCTYPE html>
 <html lang="fr">
 

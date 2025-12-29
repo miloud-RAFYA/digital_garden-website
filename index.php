@@ -1,12 +1,4 @@
-<?php
 
-include('config/database.php');
-    session_start();
-
-$_SESSION['user_id']= null;
-
-require_once 'includes/header.php';
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
